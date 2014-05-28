@@ -1,0 +1,55 @@
+{
+ 	"year": "102",
+	"term": "1",
+	"data": 
+	[
+		{
+			"train_no": "1030",
+			"destination": "新幹線的巨變",
+			"train_type": "Kashiwa",
+			"dept_time": "18:45",
+			"plat": "會窩",
+			"via": "",
+			"remarks": "車次更改"
+		},
+		{
+			"train_no": "1116",
+			"destination": "台鐵講座活動協助",
+			"train_type": "交鐵會",
+			"dept_time": "未定",
+			"plat": "台北車站",
+			"via": "",
+			"remarks": ""
+
+		},
+		{
+			"train_no": "1120",
+			"destination": "列車長的日常",
+			"train_type": "Tiam William",
+			"dept_time": "1330",
+			"plat": "會窩",
+			"via": "",
+			"remarks": "準點"
+
+		},
+		{
+			"train_no": "1201",
+			"destination": "KUKU TIME",
+			"train_type": "古庭維",
+			"dept_time": "1930",
+			"plat": "會窩",
+			"via": "",
+			"remarks": "準點"
+
+		},
+		{
+			"train_no": "1219",
+			"destination": "關西鐵道旅行",
+			"train_type": "Chungli li",
+			"dept_time": "1930",
+			"plat": "會窩",
+			"via": "",
+			"remarks": "準點"
+		}
+	]
+}

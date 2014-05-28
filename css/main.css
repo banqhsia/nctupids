@@ -1,0 +1,83 @@
+#wrapper {
+	width:850px;
+	height:315px;
+	margin:50px auto 0 auto;
+	padding-top:15px;
+	background-color:#FFFCEC;
+	border:1px solid;
+}
+#title {
+	position:relative;
+	height:55px;
+	text-align:center;
+	font-size:20px;
+	line-height:10px;
+}
+#title > .title-ch {
+	font-size:25px;
+}
+#title > .title-en {
+	font-size:15px;
+	font-family:'Trykker',sans-serif;
+}
+#content {
+	width:850px;
+}
+#left {
+	position:relative;
+	float:left;
+	width:200px;
+	height:245px;
+}
+#term {
+	width:100px;
+	margin:0px auto;
+	font-size:60px;
+	text-align:center;
+}
+#term-text {
+	width:100px;
+	margin:0 auto;
+	text-align:center;
+	font-family:'Trykker',sans-serif;
+	line-height:15px;
+}
+#term-text > .term-ch {
+	font-size:20px;
+}
+#term-text > .term-en {
+	font-size:15px;
+}
+#right {
+	position:relative;
+	float:right;
+	width:650px;
+	height:245px;
+}
+#info-table {
+	width:640px;
+	line-height:35px;
+	text-align:center;
+	font-family:'Armata',sans-serif;
+}
+#info-table .info-table-ch {
+	font-size:18px;
+}
+#info-table .info-table-en {
+	font-size:12px;
+	font-family:'Trykker',sans-serif;
+}
+#table-title > td {
+	line-height:6px;
+}
+.table-course > td {
+	background-color:#0A0A0A;
+	color:#F50A0A;
+}
+#table-space > td {
+	line-height:6px;
+}
+#edit {
+	width:850px;
+	margin:0 auto;
+}
