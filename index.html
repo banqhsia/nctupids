@@ -31,7 +31,7 @@
 
 		<div id="title">
 
-			<p class="title-ch">國立交通大學鐵道研究會 102 學年度開車資訊</p>
+			<p class="title-ch"></p>
 			<p class="title-en">DEPARTURE INFORMATION OF NCTU RAIL INSITUTE</p>
 
 		</div>
@@ -40,7 +40,7 @@
 			<div id="left">
 
 				<div id="term">
-					2
+					
 				</div>
 
 				<div id="term-text" >
@@ -121,6 +121,11 @@
 	
 	$.getJSON ('data/diagram.json', function(data) {
 
+
+		$('.title-ch').append('國立交通大學鐵道研究會 '+ data.year +' 學年度開車資訊');
+		$('#term').append(data.term);
+
+
 		for (var i=0; i<=4; i++) {
 
 			$('#table-course-'+ i +'>.train_no').append(data.data[i].train_no);
@@ -130,6 +135,8 @@
 			$('#table-course-'+ i +'>.plat').append(data.data[i].plat);
 			$('#table-course-'+ i +'>.via').append(data.data[i].via);
 			$('#table-course-'+ i +'>.remarks').append(data.data[i].remarks);
+
+
 
 		}
 	});
