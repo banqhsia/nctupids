@@ -87,6 +87,10 @@ div.indicator {
 	font-size: 20px;
 	margin: 0px auto;
 }
+#indicator-title {
+	width: 10px;
+}
+
 span.oddLight {
 	color: #F50A0A;
 }
