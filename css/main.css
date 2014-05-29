@@ -73,7 +73,7 @@
 .table-course > td {
 	background-color:#0A0A0A;
 	color:#F50A0A;
-	line-height: 35px;
+	line-height:35px;
 }
 #table-space > td {
 	line-height:6px;
@@ -82,9 +82,9 @@
 	width:850px;
 	margin:0 auto;
 }
-div.trainBoarding {
-	line-height:50%;
-	font-size: 30px;
+div.indicator {
+	line-height:65%;
+	font-size: 20px;
 	margin: 0px auto;
 }
 span.oddLight {
