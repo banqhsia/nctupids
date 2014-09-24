@@ -124,25 +124,34 @@
 
 
 <script type="text/javascript">
-	
 
-	$.getJSON ('data/diagram.json', function(data) {
+	$.ajax({
+		
+		url: 'data/diagram.json',
+		dataType: 'text',
 
-		$('.title-ch').append('國立交通大學鐵道研究會 '+ data.year +' 學年度開車資訊');
-		$('#term').append(data.term);
+		success: function(diagram_raw) {
 
-		for (var i=0; i<=4; i++) {
+			var data = $.parseJSON(diagram_raw);
 
-			$('#table-course-'+ i +'>.train_no').append(data.data[i].train_no);
-			$('#table-course-'+ i +'>.destination').append(data.data[i].destination);
-			$('#table-course-'+ i +'>.train_type').append(data.data[i].train_type);
-			$('#table-course-'+ i +'>.dept_time').append(data.data[i].dept_time);
-			$('#table-course-'+ i +'>.plat').append(data.data[i].plat);
-			$('#table-course-'+ i +'>.via').append(data.data[i].via);
-			$('#table-course-'+ i +'>.remarks').append(data.data[i].remarks);
+			$('.title-ch').append('國立交通大學鐵道研究會 '+ data.year +' 學年度開車資訊');
+			$('#term').append(data.term);
 
+			for (var i=0; i<=4; i++) {
+
+				$('#table-course-'+ i +'>.train_no').append(data.data[i].train_no);
+				$('#table-course-'+ i +'>.destination').append(data.data[i].destination);
+				$('#table-course-'+ i +'>.train_type').append(data.data[i].train_type);
+				$('#table-course-'+ i +'>.dept_time').append(data.data[i].dept_time);
+				$('#table-course-'+ i +'>.plat').append(data.data[i].plat);
+				$('#table-course-'+ i +'>.via').append(data.data[i].via);
+				$('#table-course-'+ i +'>.remarks').append(data.data[i].remarks);
+
+			}
 		}
+
 	});
+
 
 	var lightCount = 0;
 
