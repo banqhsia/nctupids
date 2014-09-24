@@ -1,5 +1,5 @@
-{
- 	"year": "102",
+var diagram = {
+	"year": "102",
 	"term": "2",
 	"data": 
 	[

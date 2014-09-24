@@ -15,6 +15,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+	<script src="data/diagram.js"></script>
 
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata|Trykker" type="text/css"> <!-- font -->
@@ -124,9 +125,8 @@
 
 
 <script type="text/javascript">
-	
 
-	$.getJSON ('data/diagram.json', function(data) {
+	var data = $.parseJSON(JSON.stringify(diagram));
 
 		$('.title-ch').append('國立交通大學鐵道研究會 '+ data.year +' 學年度開車資訊');
 		$('#term').append(data.term);
@@ -142,7 +142,6 @@
 			$('#table-course-'+ i +'>.remarks').append(data.data[i].remarks);
 
 		}
-	});
 
 	var lightCount = 0;
 
