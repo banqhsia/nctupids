@@ -1,7 +1,10 @@
 var diagram = {
+	"title": "國立交通大學鐵道研究會",
+	"titleInfo": "學年度開車資訊",
+	"titleEng": "DEPARTURE INFORMATION OF NCTU RAIL INSITUTE",
 	"year": "102",
 	"term": "2",
-	"data": 
+	"data":
 	[
 		{
 			"train_no": "1030",

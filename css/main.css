@@ -1,3 +1,10 @@
+#setting {
+	width: 90%;
+	height:315px;
+	margin: 0 auto;
+	padding-top:15px;
+}
+
 #wrapper {
 	width:850px;
 	height:315px;
@@ -97,4 +104,3 @@ span.oddLight {
 span.evenLight {
 	color: #0A0A0A;
 }
-
